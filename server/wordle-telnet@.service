@@ -1,0 +1,12 @@
+[Unit]
+Description=Wordle Telnet server
+
+[Service]
+Environment=LANG=C
+ExecStart=/srv/wordle-telnet/wordle.py
+StandardInput=socket
+StandardOutput=socket
+StandardError=journal
+
+[Install]
+WantedBy=wordle-telnet.socket
