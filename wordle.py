@@ -1,3 +1,4 @@
+#!/usr/local/python310/bin/python3.10
 from datetime import datetime
 import logging
 from pathlib import Path
